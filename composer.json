@@ -1,0 +1,50 @@
+{
+    "name": "caneco/artisan-erm",
+    "description": "Erm...awkwardly call that artisan commands",
+    "keywords": [
+        "erm",
+        "laravel",
+        "artisan",
+        "cli",
+        "helper",
+        "suggestions"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Caneco",
+            "email": "vitor.caneco@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.7",
+        "sempro/phpunit-pretty-print": "^1.0",
+        "phpunit/phpunit": "^6.0|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Caneco\\ArtisanErm\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Caneco\\ArtisanErm\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Caneco\\ArtisanErm\\ArtisanErmServiceProvider"
+            ]
+        }
+    }
+}
